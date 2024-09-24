@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover; 
+        }
+        .nutget {
+            background-color: black;
+            color: rgb(189, 188, 188);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .nutget:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/06/Kalium-Theme-Icon.png" alt="Logo">
+        </div>
+
+    </div>
+    <div class="menu">
+        <a href="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/05/adestra-c-300x200.jpg">All</a>
+        <a href="#">Branding</a>
+        <a href="#">Digital Art</a>
+        <a href="#">Photography</a>
+        <a href="#">Print</a>
+    </div>
+    <div class="gallery">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/05/adestra-c-300x200.jpg" alt="Image 1">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2015/03/cloud-inc-c-300x200.jpg" alt="Image 2">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/desk-concept-c-468x468.jpg" alt="Image 3">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/capricho-c-300x182.jpg" alt="Image 4">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/multi-color-c-300x199.jpg" alt="Image 5">
+        <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/ethics-for-design-c-300x200.jpg" alt="Image 6">
+    </div>
+    <a href="https://kaliumtheme.com/whats-new-in-kalium-4/?utm_source=kalium&utm_medium=starter_sites&utm_campaign=v3_starter_site" class="nutget">Get Kalium for $49</a>
+</body>
+</html>
